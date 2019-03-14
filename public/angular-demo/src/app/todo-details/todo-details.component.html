@@ -1,0 +1,9 @@
+<div  *ngIf="todoDetails">
+  <h2>{{todoDetails.todo | uppercase}} Details</h2>
+  <code><div><span>id: </span>{{todoDetails._id}}</div>
+  <div><span>username: </span>{{todoDetails.username}}</div>
+  <div><span>isDone: </span>{{todoDetails.isDone}}</div>
+  <div><span>hasAttachment: </span>{{todoDetails.hasAttachment}}</div></code>
+  <button (click)="goBack()">go back</button>
+
+</div>

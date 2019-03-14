@@ -1,0 +1,7 @@
+<div class="grid grid-pad">
+    <a *ngFor="let todo of todoList" class="col-1-4" routerLink="/todo/{{todo._id}}">
+        <div class="module hero">
+            <h4>{{todo.todo}}</h4>
+        </div>
+    </a>
+</div>
